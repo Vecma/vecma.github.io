@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sky star - second recap</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            .scene{
+                width:100%;
+                height:400px;
+                margin: 0px 0px 0px 0px;
+                position:absolute;
+                top:0%;
+                left:0%;
+                background:linear-gradient(black,black,black,#000033,#00004d,#000066);
+            }
+            .star{
+                width: 2px;
+                height:2px;
+                background: orange;
+                border-radius: 50%;
+                animation-name:fade;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes fade {
+                50% {
+                    opacity: 0.1;
+                }
+            }
+            /*ursa minor Y-axis range 5% - 28%  X-axis range 23.8% - 35% */
+            #star1{
+                position:absolute;
+                top:5%;
+                left:35%;
+                background: lemonchiffon;
+                animation-name: polaris;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes polaris {
+                50% {
+                    background-color: yellow;
+                    transform: scale(2);
+                }
+            }
+            #star2{
+                position:absolute;
+                top:6%;
+                left:32%;
+                background:lemonchiffon;
+                animation-name:fade;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;                
+            }
+            #star3{
+                position:absolute;
+                top:10%;
+                left:29%;
+                background:lemonchiffon;
+                animation-name:fade;
+                animation-duration: 5.5s;
+                animation-iteration-count: infinite;
+            }
+            #star4{
+                position:absolute;
+                top:17%;
+                left:27%;
+                background:orange;
+                animation-name:fade;
+                animation-duration: 6.5s;
+                animation-iteration-count: infinite;
+            }
+            #star5{
+                position:absolute;
+                top:14%;
+                left:25.5%;
+                background: lemonchiffon;
+                animation-name:fade;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+            }
+            #star6{
+                position:absolute;
+                top:25%;
+                left:23.8%;
+                background:yellow;
+                animation-name:fade;
+                animation-duration: 6.5s;
+                animation-iteration-count: infinite;
+            }
+            #star7{
+                position:absolute;
+                top:28%;
+                left:26%;
+                background:orange;
+                animation-name:fade;
+                animation-duration: 4.5s;
+                animation-iteration-count: infinite;
+            }           
+            /* other stars left side */
+            #star8{
+                position:absolute;
+                top:2%;
+                left:4%;
+                animation-name:fade;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+            }
+            #star9{
+                position:absolute;
+                top:23%;
+                left:5%;
+                animation-name:fade;
+                animation-duration: 18s;
+                animation-iteration-count: infinite;
+            }
+            #star10{
+                position:absolute;
+                top:9%;
+                left:10%;
+                animation-name:fade;
+                animation-duration: 16s;
+                animation-iteration-count: infinite;
+            }
+            #star11{
+                position:absolute;
+                top:16%;
+                left:14%;
+                animation-name:fade;
+                animation-duration: 21s;
+                animation-iteration-count: infinite;
+            }
+            #star12{
+                position:absolute;
+                top:8%;
+                left:16%;
+                animation-name:fade;
+                animation-duration: 25s;
+                animation-iteration-count: infinite;
+            }
+            #star13{
+                position:absolute;
+                top:4%;
+                left:18%;
+                animation-name:fade;
+                animation-duration: 22s;
+                animation-iteration-count: infinite;
+            }
+            #star14{
+                position:absolute;
+                top:26%;
+                left:20%;
+                animation-name:fade;
+                animation-duration: 16s;
+                animation-iteration-count: infinite;
+            }
+            #star15{
+                position:absolute;
+                top:5%;
+                left:22%;
+                animation-name:fade;
+                animation-duration: 15s;
+                animation-iteration-count: infinite;
+            }
+              /* other stars righ side */
+            #star16{
+                position:absolute;
+                top:20%;
+                left:35%;
+                animation-name:fade;
+                animation-duration: 14s;
+                animation-iteration-count: infinite;
+            }
+            #star17{
+                position:absolute;
+                top:23%;
+                left:36%;
+                animation-name:fade;
+                animation-duration: 22s;
+                animation-iteration-count: infinite;
+            }
+            #star18{
+                position:absolute;
+                top:9%;
+                left:38%;
+                animation-name:fade;
+                animation-duration: 13s;
+                animation-iteration-count: infinite;
+            }
+            #star19{
+                position:absolute;
+                top:16%;
+                left:40%;
+                animation-name:fade;
+                animation-duration: 21s;
+                animation-iteration-count: infinite;
+            }
+            #star20{
+                position:absolute;
+                top:8%;
+                left:45%;
+                animation-name:fade;
+                animation-duration: 30s;
+                animation-iteration-count: infinite;
+            }
+            #star21{
+                position:absolute;
+                top:12%;
+                left:49%;
+                animation-name:fade;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            #star22{
+                position:absolute;
+                top:15%;
+                left:52%;
+                animation-name:fade;
+                animation-duration: 16s;
+                animation-iteration-count: infinite;
+            }
+            #star23{
+                position:absolute;
+                top:35%;
+                left:54%;
+                animation-name:fade;
+                animation-duration: 19s;
+                animation-iteration-count: infinite;
+            }
+            #star24{
+                position:absolute;
+                top:32%;
+                left:57%;
+                animation-name:fade;
+                animation-duration: 22s;
+                animation-iteration-count: infinite;
+            }
+            #star25{
+                position:absolute;
+                top:33%;
+                left:61%;
+                animation-name:fade;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+            }
+            #star26{
+                position:absolute;
+                top:17%;
+                left:66%;
+                animation-name:fade;
+                animation-duration: 16s;
+                animation-iteration-count: infinite;
+            }
+            #star27{
+                position:absolute;
+                top:16%;
+                left:67%;
+                animation-name:fade;
+                animation-duration: 30s;
+                animation-iteration-count: infinite;
+            }
+            #star28{
+                position:absolute;
+                top:8%;
+                left:71%;
+                animation-name:fade;
+                animation-duration: 14s;
+                animation-iteration-count: infinite;
+            }
+            #star29{
+                position:absolute;
+                top:14%;
+                left:74%;
+                animation-name:fade;
+                animation-duration: 18s;
+                animation-iteration-count: infinite;
+            }
+            #star30{
+                position:absolute;
+                top:16%;
+                left:79%;
+                animation-name:fade;
+                animation-duration: 22s;
+                animation-iteration-count: infinite;
+            }
+            #star31{
+                position:absolute;
+                top:15%;
+                left:81%;
+                animation-name:fade;
+                animation-duration: 24s;
+                animation-iteration-count: infinite;
+            }
+            #star32{
+                position:absolute;
+                top:20%;
+                left:82%;
+                animation-name:fade;
+                animation-duration: 13s;
+                animation-iteration-count: infinite;
+            }
+            #star33{
+                position:absolute;
+                top:23%;
+                left:85%;
+                animation-name:fade;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+            }
+            #star34{
+                position:absolute;
+                top:9%;
+                left:86%;
+                animation-name:fade;
+                animation-duration: 18s;
+                animation-iteration-count: infinite;
+            }
+            #star35{
+                position:absolute;
+                top:16%;
+                left:88%;
+                animation-name:fade;
+                animation-duration: 16s;
+                animation-iteration-count: infinite;
+            }
+            #star36{
+                position:absolute;
+                top:8%;
+                left:90%;
+                animation-name:fade;
+                animation-duration: 14s;
+                animation-iteration-count: infinite;
+            }
+            #star37{
+                position:absolute;
+                top:4%;
+                left:93%;
+                animation-name:fade;
+                animation-duration: 22s;
+                animation-iteration-count: infinite;
+            }
+            #star38{
+                position:absolute;
+                top:26%;
+                left:94%;
+                animation-name:fade;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+            #star39{
+                position:absolute;
+                top:35%;
+                left:96%;
+                animation-name:fade;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            .boat{
+                width: 118px;
+                height: 80px;
+                position: absolute;
+                bottom: 0%;
+                animation-name:move;
+                animation-duration: 60s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes move {
+                0%{
+                    position: absolute;
+                    bottom: 0px;
+                    left:0%;
+                }
+                99%{
+                    position: absolute;
+                    bottom:0px;
+                    left:93%;
+                    opacity: 1;
+                }
+                100%{
+                    position: absolute;
+                    bottom:0px;
+                    left:93%;
+                    opacity: 0.0;
+                }
+            }
+            .lantern{
+                width: 1px;
+                height: 1px;
+                background: yellow;
+                box-shadow: 0px 0px 3px 3px orange;
+                position:absolute;
+                bottom:12px;
+                right:35px;
+            }
+            .sail{
+                width: 0px;
+                height: 0px;
+                border-top: 60px solid transparent;
+                border-left: 60px solid black;
+                border-bottom: 60px solid transparent;
+                position: absolute;
+                left: 10px;
+                animation-name:bobbing;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+            }
+            .hull{
+                width: 60px;
+                height: 15px;
+                background: black;
+                position: absolute;
+                bottom: 0%;
+                animation-name:bobbing;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;                
+            }
+
+            @keyframes bobbing {
+                20%{
+                    transform: rotate(1deg);
+                }
+                40%{
+                    transform: rotate(6deg);
+                }
+                60%{
+                    transform: rotate(1deg);
+                }
+                80%{
+                    transform: rotate(6deg);
+                }
+            }
+            .hull::before{
+                content: "";
+                width: 20px;
+                height: 15px;
+                position: absolute;
+                bottom: 0%;
+                background: black;
+                transform: skewX(40deg);
+            }
+            .hull::after{
+                content: "";
+                width: 40px;
+                height: 15px;
+                position: absolute;
+                bottom: 0%;
+                left:100%;
+                background: black;
+                transform: skewX(-60deg);
+            }
+            .lighthouse{
+                width: 10%;
+                height: 60%;
+                background: transparent;
+                position: absolute;
+                bottom: 0%;
+                right:0%;
+            }
+            .tower{
+                width: 30%;
+                height: 80%;
+                background: black;
+                position:absolute;
+                bottom: 0%;
+                right: 10%;
+            }
+            .window{
+                width: 5%;
+                height: 5%;
+                background: orange;
+                position: absolute;
+                bottom: 60%;
+                right: 50%;
+            }
+            .cupola{
+                width: 40%;
+                height: 20%;
+                border-radius: 10%;
+                background: black;
+                position:absolute;
+                top: 0%;
+                right: 5%;
+            }
+            .light{
+                width: 10%;
+                height: 40%;
+                background: yellow;
+                box-shadow: palegoldenrod 0px 0px 5px 5px;
+                position: absolute;
+                top: 1%;
+                left: 20%;
+                animation-name:light;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes light {
+                0%{
+                    width: 0%;
+                }
+                40%{
+                    widht:10%;
+                    left:30%;
+                }
+                60%{
+                    width: 20%;
+                    left:50%;
+                    right:50%;
+                }
+                80%{
+                    width: 10%;
+                    left:70%;
+                    right:30%
+                }
+                100%{
+                    width: 0%;
+                    left: 80%;
+                    right: 0%;
+                }
+                
+            }
+            .pier{
+                width: 100%;
+                height: 2%;
+                background:black;
+                position: absolute;
+                bottom: 0%;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div class="scene">
+            <!--ursa minor-->
+            <div class="star" id="star1"></div>
+            <div class="star" id="star2"></div>
+            <div class="star" id="star3"></div>
+            <div class="star" id="star4"></div>
+            <div class="star" id="star5"></div>
+            <div class="star" id="star6"></div>
+            <div class="star" id="star7"></div>
+            <!--other stars left side-->
+            <div class="star" id="star8"></div>
+            <div class="star" id="star9"></div>
+            <div class="star" id="star10"></div>
+            <div class="star" id="star11"></div>
+            <div class="star" id="star12"></div>
+            <div class="star" id="star13"></div>
+            <div class="star" id="star14"></div>
+            <div class="star" id="star15"></div>
+            <!--other stars right side-->
+            <div class="star" id="star16"></div>
+            <div class="star" id="star17"></div>
+            <div class="star" id="star18"></div>
+            <div class="star" id="star19"></div>
+            <div class="star" id="star20"></div>
+            <div class="star" id="star21"></div>
+            <div class="star" id="star22"></div>
+            <div class="star" id="star23"></div>
+            <div class="star" id="star24"></div>
+            <div class="star" id="star25"></div>
+            <div class="star" id="star26"></div>
+            <div class="star" id="star27"></div>
+            <div class="star" id="star28"></div>
+            <div class="star" id="star29"></div>
+            <div class="star" id="star30"></div>
+            <div class="star" id="star31"></div>
+            <div class="star" id="star32"></div>
+            <div class="star" id="star33"></div>
+            <div class="star" id="star34"></div>
+            <div class="star" id="star35"></div>
+            <div class="star" id="star36"></div>
+            <div class="star" id="star37"></div>
+            <div class="star" id="star38"></div>
+            <div class="star" id="star39"></div>
+            <!--boat-->
+            <div class="boat">
+                <div class="sail"></div>
+                <div class="lantern"></div>
+                <div class="hull"></div>
+            </div>
+            <div class="lighthouse">
+                <div class="tower">
+                    <div class="window"></div>
+                </div>
+                <div class="cupola">
+                    <div class="light"></div>
+                </div>
+                <div class="pier"></div>
+            </div>
+        </div>
+    </body>
+</html>
