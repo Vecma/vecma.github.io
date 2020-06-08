@@ -365,6 +365,7 @@
                 animation-name:move;
                 animation-duration: 60s;
                 animation-iteration-count: infinite;
+                animation-timing-function: linear;
             }
             @keyframes move {
                 0%{
@@ -491,14 +492,15 @@
                 top: 1%;
                 left: 20%;
                 animation-name:light;
-                animation-duration: 10s;
+                animation-duration: 3s;
                 animation-iteration-count: infinite;
+                animation-timing-function: linear;
             }
             @keyframes light {
                 0%{
                     width: 0%;
-                    left: 20%;
-                    right: 80%;
+                    left: 30%;
+                    right: 70%;
                 }
                 50%{
                     width: 20%;
@@ -507,8 +509,8 @@
                 }
                 100%{
                     width: 0%;
-                    left: 80%;
-                    right: 20%;
+                    left: 70%;
+                    right: 30%;
                 }
                 
             }
